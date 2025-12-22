@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Годовой отчёт команды тестирования</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yandex+Sans:wght@300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- Предварительное подключение к CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Предзагрузка критических ресурсов -->
+    <link rel="preload" as="style"
+          href="https://fonts.googleapis.com/css2?family=Yandex+Sans:wght@300;400;500;700;900&display=swap">
+    <link rel="preload" as="style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Асинхронная загрузка стилей -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Yandex+Sans:wght@300;400;500;700;900&display=swap"
+          media="print"
+          onload="this.media='all'">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+          media="print"
+          onload="this.media='all'">
+
+    <!-- Для браузеров без JavaScript -->
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Yandex+Sans:wght@300;400;500;700;900&display=swap">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+              integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer">
+    </noscript>
+
+    <!-- Оптимизация отображения шрифтов -->
+    <style>
+        body {
+            font-family: 'Yandex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-display: swap;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <div class="slides-container">
